@@ -1,0 +1,24 @@
+project Tracker is
+
+   for Source_Dirs use ("src", "src/formats", "src/engine", "src/ui");
+   for Object_Dir  use "obj";
+   for Exec_Dir    use "bin";
+   for Main        use ("tracker_main.adb");
+   for Create_Missing_Dirs use "True";
+
+   package Compiler is
+      for Default_Switches ("Ada") use
+        ("-gnat2022",   --  Ada 2022
+         "-gnata",      --  assertions enabled
+         "-gnatwae",    --  all warnings + error on warning
+         "-gnato",      --  overflow checks
+         "-fstack-check",
+         "-g");
+   end Compiler;
+
+   package Linker is
+      for Default_Switches ("Ada") use
+        ("-lSDL2");
+   end Linker;
+
+end Tracker;
