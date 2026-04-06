@@ -1,6 +1,6 @@
 # Ada Tracker
 
-A MOD, XM, S3M, and IT **[music tracker](https://en.wikipedia.org/wiki/Music_tracker)** writen in Ada, using SDL2 for audio output and UI rendering.
+A MOD, XM, S3M, and IT **[music tracker](https://en.wikipedia.org/wiki/Music_tracker)** player writen in Ada, using SDL2 for audio output and UI rendering.
 
 
 ## Screenshots
